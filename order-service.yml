@@ -11,5 +11,5 @@ spring:
     show-sql: true        # log SQL queries in console
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.Oracle12cDialect
+        dialect: org.hibernate.dialect.OracleDialect
 
