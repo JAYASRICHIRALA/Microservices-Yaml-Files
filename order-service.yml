@@ -1,1 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.1.163:1521:pdbhdfc
+    username: dbtraining
+    password: Posidex@123
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # auto-create/update tables
+    show-sql: true        # log SQL queries in console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
 
