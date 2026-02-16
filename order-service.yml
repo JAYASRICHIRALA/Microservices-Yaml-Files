@@ -1,4 +1,10 @@
+server:
+  port: 8082   # ✅ moved here, no need to hardcode locally
+
 spring:
+  application:
+    name: order-service
+
   datasource:
     url: jdbc:oracle:thin:@192.168.1.163:1521:pdbhdfc
     username: dbtraining
@@ -12,4 +18,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.OracleDialect
-
