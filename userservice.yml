@@ -10,4 +10,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 welcome:
-  message:WE ARE IN THE GENERAL NORMAL PROFILE
+  message: WE ARE IN THE GENERAL NORMAL PROFILE
