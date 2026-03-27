@@ -1,20 +1,14 @@
 server:
-  port: 8081   # ✅ centralized here, no need to hardcode in local application.yml
+  port: 8081
 
 spring:
   application:
     name: user-service
 
-  datasource:
-    url: jdbc:oracle:thin:@192.168.1.163:1521:pdbhdfc
-    username: dbtraining
-    password: Posidex@123
-    driver-class-name: oracle.jdbc.OracleDriver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
-  jpa:
-    hibernate:
-      ddl-auto: update   # auto-create/update tables
-    show-sql: true        # log SQL queries in console
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.OracleDialect
+welcome:
+  message: "Welcome to User Service from Config Server!"
